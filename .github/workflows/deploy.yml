@@ -27,7 +27,7 @@ jobs:
             ${{ runner.OS }}- 
   
       - name: Install NPM dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
       
       #------------Cache gradle wrapper and dependencies below ----------------
       - name: Cache Gradle Wrapper
